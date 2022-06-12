@@ -1,0 +1,49 @@
+:root {
+  --bg-color: #18224b;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_slider {
+  border: 5px solid white;
+  width: 2400px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.thumb > a > img {
+  transition: all 0.5;
+}
+
+.thumb > a {
+  margin: 0 10px;
+}
+
+.thumb > a:hover {
+  outline: 10px solid white;
+}
+
+.thumb > a:hover > img {
+  transform: scale(1.1);
+}
