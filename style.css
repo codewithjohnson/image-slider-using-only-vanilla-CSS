@@ -25,35 +25,3 @@ body {
 }
 
 
-.image_slider {
-  border: 5px solid rgba(255, 255, 255, 0.904);
-  width: 2400px;
-  display: flex;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.thumb{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items:center;
-    flex-wrap: wrap;
-}
-.thumb > a > img {
-  border: 5px solid rgb(180, 180, 180);
-  transition: all 0.5;
-}
-
-.thumb > a {
-  margin:10px;
-}
-
-.thumb > a:hover {
-  outline: 10px solid white;
-}
-
-.thumb > a:hover > img {
-  transform: scale(1.1);
-}
-
