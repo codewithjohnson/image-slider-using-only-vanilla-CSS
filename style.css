@@ -25,3 +25,36 @@ body {
 }
 
 
+.image_slider {
+  border: 3px solid rgba(255, 255, 255, 0.904);
+  width: 640px;
+  display: flex;
+  overflow: hidden;
+  margin-top:10px;
+}
+
+.thumb{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+
+.thumb > a {
+  margin:10px;
+}
+
+.thumb > a{
+    border: 2px solid white;
+}
+
+.thumb > a:hover {
+  outline: 3px solid white;
+}
+
+.thumb > a:hover > img {
+  transform: scale(1.05);
+}
+
